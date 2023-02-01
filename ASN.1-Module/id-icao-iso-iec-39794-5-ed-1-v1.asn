@@ -1,5 +1,4 @@
-id-icao-iso-iec-39794-5-ed-1-v1	
-	{ joint-iso-itu-t(2) international-organizations(23) icao(136) mrtd(1) iso-iec-39794(39794) part-5(5) ed-1(1) v1(1) iso-iec-39794-5(0) }
+id-icao-iso-iec-39794-5-ed-1-v1 { joint-iso-itu-t(2) international-organizations(23) icao(136) mrtd(1) iso-iec-39794(39794) part-5(5) ed-1(1) v1(1) iso-iec-39794-5(0) }
 
 -- This ASN.1 module is derived from ISO-IEC-39794-5-ed-1-v1
 
@@ -119,7 +118,7 @@ DEFINITIONS IMPLICIT TAGS ::= BEGIN
 		...
 	}
 
-EyeColour ::= CHOICE {	
+	EyeColour ::= CHOICE {	
 		extensionBlock [1] EyeColourExtensionBlock
 	}
 
@@ -141,7 +140,7 @@ EyeColour ::= CHOICE {
 		...
 	}
 
-HairColour ::= CHOICE {	
+	HairColour ::= CHOICE {	
 		extensionBlock [1] HairColourExtensionBlock
 	}
 
@@ -306,7 +305,7 @@ HairColour ::= CHOICE {
 		...
 	}
 
-MPEG4FeaturePoint ::= CHOICE {	
+	MPEG4FeaturePoint ::= CHOICE {	
 		extensionBlock [1] MPEG4FeaturePointExtensionBlock
 	}
 	
@@ -394,7 +393,7 @@ MPEG4FeaturePoint ::= CHOICE {
 		...
 	}
 
-AnthropometricLandmarkName ::= CHOICE {	
+	AnthropometricLandmarkName ::= CHOICE {	
 		extensionBlock [1] AnthropometricLandmarkNameExtensionBlock
 	}
 
@@ -443,7 +442,7 @@ AnthropometricLandmarkName ::= CHOICE {
 		...
 	}
 
-AnthropometricLandmarkPointName ::= CHOICE {	
+	AnthropometricLandmarkPointName ::= CHOICE {	
 		extensionBlock [1] AnthropometricLandmarkPointNameExtensionBlock
 	}
 
@@ -518,7 +517,7 @@ AnthropometricLandmarkPointName ::= CHOICE {
 		...
 	}
 
-AnthropometricLandmarkPointId ::= CHOICE {	
+	AnthropometricLandmarkPointId ::= CHOICE {	
 		extensionBlock [1] AnthropometricLandmarkPointIdExtensionBlock
 	}
 
@@ -590,7 +589,7 @@ AnthropometricLandmarkPointId ::= CHOICE {
 		...
 	}
 
-CaptureDeviceTechnologyId2D ::= CHOICE {	
+	CaptureDeviceTechnologyId2D ::= CHOICE {	
 		extensionBlock [1] CaptureDeviceTechnologyId2DExtensionBlock
 	}
 
@@ -618,13 +617,12 @@ CaptureDeviceTechnologyId2D ::= CHOICE {
 		...
 	}
 
-FaceImageKind2D ::= CHOICE {	
+	FaceImageKind2D ::= CHOICE {	
 		extensionBlock [1] FaceImageKind2DExtensionBlock
 	}
 
 	PostAcquisitionProcessingBlock ::= SEQUENCE {
-	-- Refer to Portrait Quality Technical Report V1.0 (April 2018) for 
-	-- the value allowed of each of the property below.		rotated [0] BOOLEAN OPTIONAL,
+		rotated [0] BOOLEAN OPTIONAL,
 		cropped [1] BOOLEAN OPTIONAL,
 		downSampled [2] BOOLEAN OPTIONAL,
 		whiteBalanceAdjusted [3] BOOLEAN OPTIONAL,
@@ -651,11 +649,11 @@ FaceImageKind2D ::= CHOICE {
 		...
 	}
 
-LossyTransformationAttempts ::= CHOICE {	
+	LossyTransformationAttempts ::= CHOICE {	
 		extensionBlock [1] LossyTransformationAttemptsExtensionBlock
 	}
 
-ImageDataFormatCode ::= ENUMERATED {
+	ImageDataFormatCode ::= ENUMERATED {
 		unknown (0),
 		other (1),
 		jpeg (2),
@@ -670,7 +668,7 @@ ImageDataFormatCode ::= ENUMERATED {
 		...
 	}
 
-ImageDataFormat ::= CHOICE {		code [0] ImageDataFormatCode,
+	ImageDataFormat ::= CHOICE {		code [0] ImageDataFormatCode,
 		extensionBlock [1] ImageDataFormatExtensionBlock
 	}
 
@@ -710,7 +708,7 @@ ImageDataFormat ::= CHOICE {		code [0] ImageDataFormatCode,
 		...
 	}
 
-ImageColourSpace ::= CHOICE {	
+	ImageColourSpace ::= CHOICE {	
 		extensionBlock [1] ImageColourSpaceExtensionBlock
 	}
 
