@@ -1,5 +1,4 @@
-id-icao-iso-iec-39794-1-ed-1-v1	
-	{ joint-iso-itu-t(2) international-organizations(23) icao(136) mrtd(1) iso-iec-39794(39794) part-1(1) ed-1(1) v1(1) iso-iec-39794-1(0) }
+id-icao-iso-iec-39794-1-ed-1-v1 { joint-iso-itu-t(2) international-organizations(23) icao(136) mrtd(1) iso-iec-39794(39794) part-1(1) ed-1(1) v1(1) iso-iec-39794-1(0) }
 
 -- This ASN.1 module is derived from ISO-IEC-39794-1-ed-1-v1
 
@@ -204,9 +203,9 @@ PADDataBlock ::= SEQUENCE {
 	scoreBlocks		[1] PADScoreBlocks		OPTIONAL,
 	extendedDataBlocks	[2] PADExtendedDataBlocks	OPTIONAL,
 	captureContext		[3] PADCaptureContext		OPTIONAL,
-	supervisionLevel	[4] PADSupervisionLevel	OPTIONAL,
+	supervisionLevel	[4] PADSupervisionLevel		OPTIONAL,
 	riskLevel		[5] PADRiskLevel		OPTIONAL,
-	criteriaCategory	[6] PADCriteriaCategory	OPTIONAL,
+	criteriaCategory	[6] PADCriteriaCategory		OPTIONAL,
 	parameter		[7] OCTET STRING		OPTIONAL,
 	challenges		[8] PADChallenges		OPTIONAL,
 	captureDateTimeBlock	[9] CaptureDateTimeBlock	OPTIONAL,
@@ -247,37 +246,37 @@ CoordinateCartesian3DDoubleBlock ::= SEQUENCE {
 }
 
 CoordinatePolarIntBlock ::= SEQUENCE {
-	radius					[0] INTEGER,
-	azimuth					[1] INTEGER
+	radius		[0] INTEGER,
+	azimuth		[1] INTEGER
 }
 
 CoordinatePolarDoubleBlock ::= SEQUENCE {
-	radius					[0] REAL,
-	azimuth					[1] REAL
+	radius		[0] REAL,
+	azimuth		[1] REAL
 }
 
 CoordinateSphericalIntBlock ::= SEQUENCE {
-	radius					[0] INTEGER,
-	inclination				[1] INTEGER,
-	azimuth					[2] INTEGER
+	radius		[0] INTEGER,
+	inclination	[1] INTEGER,
+	azimuth		[2] INTEGER
 }
 
 CoordinateSphericalDoubleBlock ::= SEQUENCE {
-	radius					[0] REAL,
-	inclination				[1] REAL,
-	azimuth					[2] REAL
+	radius		[0] REAL,
+	inclination	[1] REAL,
+	azimuth		[2] REAL
 }
 
 CoordinateCylindricalIntBlock ::= SEQUENCE {
-	radius					[0] INTEGER,
-	azimuth					[1] INTEGER,
-	height					[2] INTEGER
+	radius		[0] INTEGER,
+	azimuth		[1] INTEGER,
+	height		[2] INTEGER
 }
 
 CoordinateCylindricalDoubleBlock ::= SEQUENCE {
-	radius					[0] REAL,
-	azimuth					[1] REAL,
-	height					[2] REAL
+	radius		[0] REAL,
+	azimuth		[1] REAL,
+	height		[2] REAL
 }
 
 END
